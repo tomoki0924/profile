@@ -1,0 +1,209 @@
+#baseURL = "http://example.org/"
+#languageCode = "en-us"
+#title = "My New Hugo Site"
+#theme = "aafu"
+
+baseURL = "https://tomoki0924.github.io/my_profile/"
+languageCode = "ja"
+theme = "aafu"
+
+[params]
+    title = "tomoki`s profile"
+    author = "hoshino tomoki"
+    description = "tomoki`s profile"
+    # copyright = "aaa"
+
+
+    [params.theme]
+        allowToggle = true
+        # Available themes are 'light', 'dark', and 'pinkish'
+        mainTheme = "light"
+        altTheme = "dark"
+        # setting false below will hide 'aafu by darshan' displayed under the profile pic
+        showAttribute = true
+
+    [params.favicons]
+        use = false
+        metas = '''
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
+        <link rel="shortcut icon" href="favicon.ico">
+        '''
+
+    # Profile section
+    [params.profile]
+        name = "Hoshino Tomoki"
+		tagline = "星野　智紀"
+		location = "Doshisha University"
+        photo = "fukuro.jpg"
+
+    # Section for links to social websites
+    [params.social]
+        title = "Links"
+
+
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-github"
+            url = "https://github.com/tomoki0924"
+            title = "GitHub"
+
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-gitlab"
+            url = "https://gitlab.com/tomoki0924"
+            title = "GitLab"
+
+
+
+    #Specify what is showin in the Accordion
+    [[params.showInAccordion]]
+        item = "aboutme"
+        expand = true   # true for the section that is initially expanded
+    #[[params.showInAccordion]]
+    #    item = "experience"
+    [[params.showInAccordion]]
+        item = "education"
+    [[params.showInAccordion]]
+        item = "publication"
+    #[[params.showInAccordion]]
+    #    item = "project"
+    #[[params.showInAccordion]]
+    #    item = "skill"
+    #[[params.showInAccordion]]
+    #    item = "activity"
+    [[params.showInAccordion]]
+        item = "hobby"
+
+    [params.aboutme]
+        title = "About Me"
+        icon = "fas fa-user"
+        description = "同志社大学　文化情報学部3年生。データサイエンス、統計科学を中心に学んでいます。"
+
+    # Experience section
+    [params.experience]
+        title = "Experiences"
+        icon = "fas fa-briefcase"
+
+        [[params.experience.list]]
+            position = "Job Title"
+            dates = "2019 - *Present*"
+            company = "Company Name"
+            details = "Printed from desktop. Sent [emails](#). Called people using telephone. Drank water from office cooler. Ate donuts on people's birthdays."
+        [[params.experience.list]]
+            position = "Job Title"
+            dates = "2018 - 2019"
+            link = "#"
+            company = "Company Name"
+
+    # Education section
+    [params.education]
+        title = "Education"
+        icon = "fas fa-graduation-cap"
+
+       
+        [[params.education.list]]
+            degree = "学部"
+            college = "同志社大学　文化情報学部"
+            dates = "2017.4 - 2021.3(予定)"
+            #thesis_title = "Effect of humans on other humans: a study of human behavior."
+            #thesis_link = "#"
+        [[params.education.list]]
+            degree = "高校卒業"
+            college = "高田学苑　高田高等学校"
+            dates = "2017.3"
+
+    # Publication section
+    [params.publication]
+        title = "Publications(研究業績)"
+        icon = "fas fa-book"
+        #The order below determines the order in which the items appear in "Publications" section
+        format = ["date", "authors", "title", "journal"]
+        #If you don't want to group publications, comment the line below by adding # at the beginning
+        types = ["発表"]
+
+        [[params.publication.list]]
+            title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            authors = "F Last, F Second, P secondary"
+            date = "2018"
+            journal = "Journal of Field 52 (16), 9033-9044"
+            link = "#"
+            type = "Journal Articles"
+
+        [[params.publication.list]]
+            title = "利用者の希望に応じた類似物件の提案"
+            authors = "木村優太, 岡本久, 星野智紀, 平体和也, 堂園和秀, 吉冨優太"
+            date = "2019"
+            journal = "Web DB Forum 2019 (於 工学院大学新宿キャンパス)"
+            type = "発表"
+
+        [[params.publication.list]]
+            title = "字母の違いを考慮した機械学習によるくずし字認識 "
+            authors = "木村 優太, 星野 智紀, 杉浦 遊平, 深川 大路"
+            date = "2019"
+            journal = "研究報告人文科学とコンピュータ（CH）  	2019-CH-120"
+            link="https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_uri&item_id=195563"
+            type = "発表"
+    # Project section
+    [params.project]
+        title = "Projects"
+        icon = "fas fa-project-diagram"
+
+        [[params.project.list]]
+            title = "project"
+            url = "#"
+            description = "Description of the project"
+        [[params.project.list]]
+            title = "project"
+            url = "#"
+            description = "Description of the project"
+        [[params.project.list]]
+            title = "project"
+            url = "#"
+            description = "Description of the project"
+        [[params.project.list]]
+            title = "project"
+            url = "#"
+            description = "Description of the project"            
+
+    # Skill section
+    [params.skill]
+        title = "Skills"
+        panelId = "skill-panel"
+        icon = "fas fa-cogs"
+
+        [[params.skill.list]]
+            skill = "Skill 1, Skill 2"
+            skillrating = 90
+        [[params.skill.list]]
+            skill = "Skill 3"
+            skillrating = 80
+        [[params.skill.list]]
+            skill = "Skill 4"
+            skillrating = 50
+
+
+    # Activity section
+    #[params.activity]
+    #	title = "Activities"
+    #    icon = "fas fa-cogs"
+
+    #   [[params.activity.list]]
+    #   	activity = "同志社学生放送局"
+
+    # Hobby section
+    [params.hobby]
+        title = "Hobbies"
+        icon = "fas fa-gamepad"
+		
+        [[params.hobby.list]]		
+		    hobby = "読書(といいつつ、よめてない)"
+        [[params.hobby.list]]		
+		    hobby = "音楽(最近日本語ラップにはまりました)"
+        #[[params.hobby.list]]		
+		#    hobby = "Baking"
+
+
