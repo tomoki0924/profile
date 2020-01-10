@@ -3,7 +3,7 @@
 #title = "My New Hugo Site"
 #theme = "aafu"
 
-baseURL = "https://tomoki0924.github.io/my_profile/"
+baseURL = "https://tomoki0924.github.io/my_site/"
 languageCode = "ja"
 theme = "aafu"
 
