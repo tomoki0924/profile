@@ -3,10 +3,13 @@
 #title = "My New Hugo Site"
 #theme = "aafu"
 
-baseURL = "https://tomoki0924/profile.github.io"
+baseURL = "https://tomoki0924.github.io/profile/"
 languageCode = "ja"
 theme = "aafu"
 publishDir="docs"
+canonifyurls = true
+hasCJKLanguage = true
+
 [params]
     title = "tomoki`s profile"
     author = "hoshino tomoki"
