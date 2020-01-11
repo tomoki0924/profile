@@ -3,10 +3,10 @@
 #title = "My New Hugo Site"
 #theme = "aafu"
 
-baseURL = "https://tomoki0924.github.io/my_site/"
+baseURL = "https://tomoki0924/profile.github.io"
 languageCode = "ja"
 theme = "aafu"
-
+publishDir="docs"
 [params]
     title = "tomoki`s profile"
     author = "hoshino tomoki"
@@ -23,14 +23,9 @@ theme = "aafu"
         showAttribute = true
 
     [params.favicons]
-        use = false
-        metas = '''
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
-        <link rel="shortcut icon" href="favicon.ico">
+       use = true
+       metas = '''
+        <link rel="icon" type="image/png" sizes="28x28" href="T.png">
         '''
 
     # Profile section
