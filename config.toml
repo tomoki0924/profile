@@ -79,7 +79,7 @@ hasCJKLanguage = true
     [params.aboutme]
         title = "About Me"
         icon = "fas fa-user"
-        description = "同志社大学　文化情報学部3年生。データサイエンス、統計科学を中心に学んでいます。"
+        description = "同志社大学　文化情報学部4年生。データサイエンス、統計科学を中心に学んでいます。"
 
     # Experience section
     [params.experience]
